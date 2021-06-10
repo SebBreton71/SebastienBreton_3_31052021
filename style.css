@@ -10,6 +10,10 @@ h4 {
   font-family: 'Shrikhand', cursive;
 }
 
+h3{
+  color: black;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,6 +109,10 @@ h4 {
           flex-direction: column;
 }
 
+#restaurants figcaption p{
+  color: black;
+}
+
 .item1 {
   text-align: center;
   border: 1px solid #eee;
@@ -127,7 +135,7 @@ h4 {
 }
 
 footer {
-  background-color: darkslategrey;
+  background-color: #212323;
   color: white;
 }
 
@@ -136,4 +144,5 @@ h4 {
   font-weight: 300;
   padding: 15px 0 0 15px;
 }
+
 /*# sourceMappingURL=style.css.map */
