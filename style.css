@@ -92,8 +92,8 @@ h3 {
           justify-content: center;
   margin: auto;
   width: 220px;
-  border: 1px solid violet;
-  background-color: violet;
+  border: 1px solid #9356DC;
+  background-color: #9356DC;
   border-radius: 25px;
   padding: 15px;
 }
@@ -101,6 +101,14 @@ h3 {
 .restaurant-link a {
   color: white;
   font-weight: 500;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.fa-mobile-alt, .fa-list-ul {
+  color: #747070;
 }
 
 #restaurants {
@@ -137,6 +145,28 @@ h3 {
           flex-direction: column;
 }
 
+.part2 nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 270px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+.part2 nav ul li a span {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 300;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+
 .item1 {
   text-align: center;
   border: 1px solid #eee;
@@ -155,6 +185,20 @@ h3 {
   -webkit-box-shadow: 1px 1px 0px 0px #c4c4c4;
           box-shadow: 1px 1px 0px 0px #c4c4c4;
   margin: 15px auto;
+}
+
+.card1 figure, .card2 figure {
+  position: relative;
+}
+
+.card1 span, .card2 span {
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 10px;
+  background-color: #99E2D0;
+  color: #00805a;
+  padding: 8px 15px;
+  font-weight: 600;
 }
 
 .card1 img, .card2 img, .card3 img, .card4 img {
@@ -187,5 +231,40 @@ h4 {
   font-size: 1em;
   font-weight: 300;
   padding: 15px 0 15px 15px;
+}
+
+.head-image img {
+  width: 100%;
+  height: 240px;
+  -o-object-position: 10% 40%;
+     object-position: 10% 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px auto;
+}
+
+.menu1 {
+  background-color: #eee;
+}
+
+.menu1 h4 {
+  font-size: 1.5em;
+}
+
+.menu1 p {
+  width: 80%;
+  height: 50px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+h5 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
