@@ -30,7 +30,7 @@ h3{
     flex-direction: row;
 
     & i{
-        padding: 15px 15px 0 0; 
+        padding: 0px 10px 0 0; 
     }
 
     & p{
@@ -72,8 +72,8 @@ h3{
     justify-content: center;
     margin: auto;
     width: 220px;
-    border: 1px solid violet;
-    background-color: violet;
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
     border-radius: 25px;
     padding: 15px;
 
@@ -82,6 +82,10 @@ h3{
         font-weight: 500;
     }
 }
+
+// .fa-mobile-alt, .fa-list-ul {
+//     color: #747070;
+// }
 
 #restaurants{
     background-color: #eee;
@@ -107,12 +111,28 @@ h3{
     }
 }
 
-
-
 .part2 nav ul{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    
+    & li a{
+        display: flex;
+        max-width: 270px;
+        justify-content: space-between;
+        color: black;
+    }
 }
+
+.part2 nav ul li a span{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    }    
 
 .item1{
     text-align: center;
@@ -131,6 +151,19 @@ h3{
     width: 90%;
     box-shadow: 1px 1px 0px 0px #c4c4c4;
     margin: 15px auto;
+}
+.card1 figure, .card2 figure{
+    position:relative;
+}
+
+.card1 span, .card2 span{
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 10px;
+    background-color: #99E2D0;
+    color: #00805a;
+    padding: 8px 15px;
+    font-weight: 600;
 }
 
 .card1 img, .card2 img, .card3 img, .card4 img{
@@ -162,4 +195,36 @@ h4{
     padding: 15px 0 15px 15px;
 }
 
+.head-image img {
+    width: 100%;
+    height: 240px;
+    object-position: 10% 40%;
+    object-fit: cover;
+    margin:0px auto;
+}
+
+.menu1 {
+    background-color: #eee;
+}
+
+.menu1 h4{
+    font-size: 1.5em;
+}
+
+.menu1 ul li{
+    width: 80%;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+h5 {
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
 
