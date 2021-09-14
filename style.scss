@@ -19,6 +19,7 @@ h3{
 #header{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
     #header img{
@@ -30,12 +31,14 @@ h3{
     flex-direction: row;
 
     & i{
-        padding: 0px 10px 0 0; 
+        padding: 10px 10px 10px 0px; 
     }
 
     & p{
         font-size: 0.9em;
         font-weight:600;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -71,15 +74,15 @@ h3{
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 220px;
+    width: 210px;
     border: 1px solid #9356DC;
     background-color: #9356DC;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
 
     & a{
         color: white;
-        font-weight: 500;
+        font-weight: 400;
     }
 }
 
@@ -91,9 +94,10 @@ h3{
     background-color: #eee;
 
     & h2{
+        margin-top: 50px;
         padding-top: 50px;
         padding-left: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     & figcaption p{
@@ -111,9 +115,13 @@ h3{
     }
 }
 
-.part2 nav ul{
+.part2 ul{
     display: flex;
     flex-direction: column;
+
+    & li:hover{
+        background-color: rgb(228, 223, 233);
+    }
     
     & li a{
         display: flex;
@@ -123,26 +131,40 @@ h3{
     }
 }
 
-.part2 nav ul li a span{
+.part2 ul li{
+    box-shadow: 2px 2px 2px 2px white;
+
+    & i{
+        color: grey;
+        font-size: 1.2em;
+    } 
+} 
+
+.part2 ul li i:hover{
+color:blueviolet;
+}
+
+.part2 ul li a span{
     color: white;
     font-size: 0.8em;
-    font-weight: 300;
-    padding: 3px;
-    width: 20px;
-    height: 20px;
+    font-weight: 500;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background-color: #9356DC;
+    margin-left: -30px;
     }    
 
 .item1{
     text-align: center;
     border: 1px solid #eee;
     background-color: #eee;
-    border-radius: 15px;
+    border-radius: 25px;
     margin : 10px auto;
     font-size: 1em;
     font-weight: 600; 
-    padding: 20px; 
+    padding: 25px; 
     width: 90%;
 }
 
@@ -193,6 +215,11 @@ h4{
     font-size: 1em;
     font-weight: 300;
     padding: 15px 0 15px 15px;
+}
+
+.item2 { 
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .head-image img {

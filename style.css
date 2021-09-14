@@ -24,6 +24,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -42,12 +43,14 @@ h3 {
 }
 
 .sub-logo i {
-  padding: 15px 15px 0 0;
+  padding: 10px 10px 10px 0px;
 }
 
 .sub-logo p {
   font-size: 0.9em;
   font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #sub-logo {
@@ -91,24 +94,16 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  width: 220px;
+  width: 210px;
   border: 1px solid #9356DC;
   background-color: #9356DC;
   border-radius: 25px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .restaurant-link a {
   color: white;
-  font-weight: 500;
-}
-
-.fa-store {
-  color: #9356DC;
-}
-
-.fa-mobile-alt, .fa-list-ul {
-  color: #747070;
+  font-weight: 400;
 }
 
 #restaurants {
@@ -116,9 +111,10 @@ h3 {
 }
 
 #restaurants h2 {
+  margin-top: 50px;
   padding-top: 50px;
   padding-left: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #restaurants figcaption p {
@@ -135,7 +131,7 @@ h3 {
   padding-left: 10px;
 }
 
-.part2 nav ul {
+.part2 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +141,11 @@ h3 {
           flex-direction: column;
 }
 
-.part2 nav ul li a {
+.part2 ul li:hover {
+  background-color: #e4dfe9;
+}
+
+.part2 ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,26 +156,41 @@ h3 {
   color: black;
 }
 
-.part2 nav ul li a span {
+.part2 ul li {
+  -webkit-box-shadow: 2px 2px 2px 2px white;
+          box-shadow: 2px 2px 2px 2px white;
+}
+
+.part2 ul li i {
+  color: grey;
+  font-size: 1.2em;
+}
+
+.part2 ul li i:hover {
+  color: blueviolet;
+}
+
+.part2 ul li a span {
   color: white;
   font-size: 0.8em;
-  font-weight: 300;
-  padding: 3px;
-  width: 20px;
-  height: 20px;
+  font-weight: 500;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: #9356DC;
+  margin-left: -30px;
 }
 
 .item1 {
   text-align: center;
   border: 1px solid #eee;
   background-color: #eee;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 10px auto;
   font-size: 1em;
   font-weight: 600;
-  padding: 20px;
+  padding: 25px;
   width: 90%;
 }
 
@@ -231,6 +246,11 @@ h4 {
   font-size: 1em;
   font-weight: 300;
   padding: 15px 0 15px 15px;
+}
+
+.item2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .head-image img {
