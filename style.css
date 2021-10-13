@@ -17,6 +17,16 @@ h3 {
   color: black;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,16 +104,17 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  width: 210px;
+  width: 200px;
   border: 1px solid #9356DC;
   background-color: #9356DC;
   border-radius: 25px;
-  padding: 10px;
+  padding: 12px;
 }
 
 .restaurant-link a {
   color: white;
   font-weight: 400;
+  font-size: 0.9em;
 }
 
 #restaurants {
@@ -114,8 +125,8 @@ h3 {
 #restaurants h2 {
   margin-top: 50px;
   padding-top: 50px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
 }
 
 #restaurants figcaption p {
@@ -151,9 +162,9 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   max-width: 270px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: black;
 }
 
@@ -165,6 +176,8 @@ h3 {
 .part2 ul li i {
   color: grey;
   font-size: 1.2em;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 .part2 ul li i:hover {
@@ -175,12 +188,12 @@ h3 {
   color: white;
   font-size: 0.8em;
   font-weight: 500;
-  padding: 4px;
+  padding: 6px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: #9356DC;
-  margin-left: -35px;
+  margin-left: -75px;
 }
 
 .item1 {
@@ -189,10 +202,10 @@ h3 {
   background-color: #eee;
   border-radius: 25px;
   margin: 10px auto;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
-  padding: 25px;
-  width: 90%;
+  padding: 20px;
+  width: 85%;
 }
 
 .card1, .card2, .card3, .card4 {
@@ -200,7 +213,7 @@ h3 {
   width: 90%;
   -webkit-box-shadow: 1px 1px 0px 0px #c4c4c4;
           box-shadow: 1px 1px 0px 0px #c4c4c4;
-  margin: 15px auto;
+  margin: 20px auto;
 }
 
 .card1 figure, .card2 figure {
@@ -233,8 +246,7 @@ h3 {
 }
 
 .card1 p, .card2 p, .card3 p, .card4 p {
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 5px 0px 15px 10px;
 }
 
 footer {
@@ -242,10 +254,22 @@ footer {
   color: white;
 }
 
+footer ul li a {
+  color: white;
+}
+
+footer ul li a i {
+  padding-right: 10px;
+}
+
 h4 {
   font-size: 1.2em;
   font-weight: 300;
   padding: 20px 0 15px 15px;
+}
+
+footer ul {
+  margin-left: 20px;
 }
 
 .item2 {
@@ -263,15 +287,31 @@ h4 {
   margin: 0px auto;
 }
 
-.menu1 {
+.menu_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
   background-color: #eee;
 }
 
-.menu1 h4 {
+.menu h4 {
   font-size: 1.5em;
 }
 
-.menu1 ul li {
+.menu ul li {
   width: 80%;
   height: 50px;
   margin-left: 15px;
@@ -279,6 +319,16 @@ h4 {
   margin-bottom: 10px;
   background-color: white;
   border-radius: 15px;
+}
+
+.menu h5::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background: #99e2d0;
+  position: absolute;
+  left: 15px;
+  bottom: 280px;
 }
 
 h5 {
