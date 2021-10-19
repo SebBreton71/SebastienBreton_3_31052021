@@ -143,7 +143,7 @@ body{
         margin-left: -12px;
     } 
 } 
-
+  
 .part2 ul li i:hover{
 color:blueviolet;
 }
@@ -170,6 +170,7 @@ color:blueviolet;
     font-weight: 600; 
     padding: 20px; 
     width: 85%;
+    cursor: pointer;
 }
 
 .card1, .card2, .card3, .card4{
@@ -227,6 +228,7 @@ h4{
 footer ul
 {
     margin-left: 20px;
+    padding-bottom: 30px;
 }
 
 .item2 { 
@@ -255,24 +257,14 @@ footer ul
     font-size: 1.5em;
 }
 
-.menu ul li{
-    width: 80%;
-    height: 50px;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: white;
-    border-radius: 15px;
-}
-
-.menu h5::after{
+.menu_grid_title h5::after{
     content: "";
     width: 30px;
     height: 4px;
     background: #99e2d0;
     position: absolute;
     left: 15px;
-    bottom: 280px;
+   display: block;
 }
 
 h5 {
@@ -281,4 +273,48 @@ h5 {
     margin-left: 15px;
     margin-bottom: 15px;
 }
+.dish_and_price{
+    box-shadow: 2px 2px 2px 2px white;
+    width: 95%;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+.menu_case_dish-title p{
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.menu_case_dish-subtitle p{
+    font-size: small;
+    padding-left: 15px;
+}
+.menu_case_price {
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+    left: 285px;
+    bottom: 10px;
+}
+.command_button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    border-radius: 25px;
+    padding: 12px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 
+    & a{
+        color: white;
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+}
